@@ -10,10 +10,27 @@ Page({
   },
 
   viewPaper:function(e){
+    let id = e.target.dataset.id
     let view = this.data.view
-    wx.navigateTo({
-      url: `/pages/question/question?view=${view}`,
+    wx.showLoading({
+      title: '加载中',
     })
+    R("/api/paper/paperAnswer", {
+      paperId: id
+    }).then(res=>{
+      console.log(res)
+      wx.setStorage({
+        key: 'createPaperView',
+        data: res.bean,
+      })
+      wx.hideLoading()
+      wx.navigateTo({
+        url: `/pages/question/question?view=${view}`,
+      })
+    })
+    // wx.navigateTo({
+    //   url: `/pages/question/question?view=${view}&id=${id}`,
+    // })
   },
 
   xiangqing: function (id) {

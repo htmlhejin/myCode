@@ -19,7 +19,7 @@ Page({
       type: type
     }).then(res => {
       this.setData({
-        question: res.bean.content
+        question: res.bean
       })
       for (let i = 0; i < this.data.question.length; i++) {
         let item = this.data.question[i]

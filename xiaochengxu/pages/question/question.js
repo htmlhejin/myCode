@@ -347,8 +347,10 @@ Page({
     }
   },
   onLoad: function(options) {
+    console.log('question->',options)
     let that = this;
     let onlyView = that.data.onlyView
+    let id = options.id
     that.setData({
       onlyView: options.view
     })
@@ -364,23 +366,52 @@ Page({
         charList: res
       })
     })
-    wx.getStorage({
-      key: 'paperInfomation',
-      success: function (res) {
-        let paperInfo = res.data
-        that.setData({
-          question: res,
-          paper: paperInfo.paper,
-          uuid: paperInfo.uuid,
-          questions: paperInfo.list,
-        })
-        for (let i = 0; i < that.data.questions.length;i++){
-          that.data.questions[i].question.isDone = 0
+    // 从创建的试卷跳转过来
+    if (that.data.onlyView==1){
+      wx.getStorage({
+        key: 'createPaperView',
+        success: function (res) {
+          console.log('createPaperView->',res)
+          let paperInfo = res.data
+          that.setData({
+            question: res,
+            paper: paperInfo.paper,
+            uuid: paperInfo.uuid,
+            questions: paperInfo.list,
+          })
+          for (let i = 0; i < that.data.questions.length; i++) {
+            that.data.questions[i].question.isDone = 0
+          }
+          let time = Number(that.data.paper.time) * 60
+          countdown(that, time, timer)
+          that.everyQuestion(0)
+        },
+        fail:function(err){
+          console.log(err)
         }
-        let time = Number(that.data.paper.time) * 60
-        countdown(that, time, timer)
-        that.everyQuestion(0)
-      },
-    })
+      })
+    }
+    // 从正常开始答题跳转过来
+    else if (options.time==1){
+      wx.getStorage({
+        key: 'paperInfomation',
+        success: function (res) {
+          console.log(res)
+          let paperInfo = res.data
+          that.setData({
+            question: res,
+            paper: paperInfo.paper,
+            uuid: paperInfo.uuid,
+            questions: paperInfo.list,
+          })
+          for (let i = 0; i < that.data.questions.length; i++) {
+            that.data.questions[i].question.isDone = 0
+          }
+          let time = Number(that.data.paper.time) * 60
+          countdown(that, time, timer)
+          that.everyQuestion(0)
+        },
+      })
+    }
   }
 })

@@ -11,38 +11,35 @@ Page({
   },
   // 开始答题
   response(event) {
+    console.log(event)
+    let id = event.target.dataset.id
     let that = this
     wx.showLoading({
       title: '加载中',
     })
     R("/api/paper/paperAnswer", {
-      paperId: event.target.dataset.id
+      paperId: id
     }).then(res => {
+      console.log(res.bean.paper)
       let mold = res.bean.paper.mold
       if (mold == 1) {
+        console.log('mold == 1')
         wx.setStorage({
           key: 'paperInfomation',
           data: res.bean,
         })
         wx.hideLoading()
         wx.navigateTo({
-          url: '/pages/question/question',
+          url: `/pages/question/question?time=1`,
         })
-      } else if (mold == 2) {
-        console.log(res)
+      } 
+      else if (mold == 2) {
+        console.log('已经答过一次',res)
         wx.showToast({
           title: '已经答过一次',
           icon:'warn',
           duration:1500
         })
-        // wx.setStorage({
-        //   key: 'paperInfomation',
-        //   data: res.bean,
-        // })
-        // wx.hideLoading()
-        // wx.navigateTo({
-        //   url: '/pages/question/question',
-        // })
       }
     })
   },
@@ -53,7 +50,6 @@ Page({
     R("/api/paper/paper", {
       id: id,
     }).then(res => {
-      console.log(res)
       that.setData({
         paper: res.bean
       })
