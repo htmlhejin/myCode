@@ -1,0 +1,67 @@
+<view>
+  <view class="top">
+    <view class="top-nav">
+      <view class="answer-card"></view>
+      <text class="answer-card-text">答题卡</text>
+    </view>
+    <view class="top-nav">
+      <image class="daoajishi" src="../../assets/image/daojishi.png"></image>
+      <text class="daoajishi-text">倒计时：{{second}}秒</text>
+    </view>
+    <view class="submit">
+      <image class="tijiao" src="../../assets/image/tijiao.png"></image>
+      <text class="jiaojuan" bindtap="submit">交卷</text>
+    </view>
+  </view>
+  <view class="body">
+    <view class="question">
+      <image class="type-img" src="../../assets/image/logo.png"></image>
+      <view wx:if="{{question.type=='1'}}">
+        <text class="type1">单选</text>{{question.topic}}
+        <view class="answer" wx:for="{{list}}" wx:for-index="index" wx:for-item="item" wx:key="id">
+          <view class="oneThree" bindtouchstart="bindtouchstart1" style="background-color:{{option1}}" wx:if="{{index==0}}">A、{{item.name}}</view>
+          <view class="oneThree" bindtouchstart="bindtouchstart2" style="background-color:{{option2}}" wx:if="{{index==1}}">B、{{item.name}}</view>
+          <view class="oneThree" bindtouchstart="bindtouchstart3" style="background-color:{{option3}}" wx:if="{{index==2}}">C、{{item.name}}</view>
+          <view class="oneThree" bindtouchstart="bindtouchstart4" style="background-color:{{option4}}" wx:if="{{index==3}}">D、{{item.name}}</view>
+        
+        </view>
+      </view>
+
+      <view wx:if="{{question.type=='2'}}">
+        <text class="type1">多选</text> {{question.topic}}
+        <view class="answer" wx:for="{{list}}" wx:for-index="index" wx:for-item="item" wx:key="id">
+          <view class="oneThree" bindtouchstart="bindtouchstart1" style="background-color:{{option1}}" wx:if="{{index==0}}">A、{{item.name}}</view>
+          <view class="oneThree" bindtouchstart="bindtouchstart2" style="background-color:{{option2}}" wx:if="{{index==1}}">B、{{item.name}}</view>
+          <view class="oneThree" bindtouchstart="bindtouchstart3" style="background-color:{{option3}}" wx:if="{{index==2}}">C、{{item.name}}</view>
+          <view class="oneThree" bindtouchstart="bindtouchstart4" style="background-color:{{option4}}" wx:if="{{index==3}}">D、{{item.name}}</view>
+        </view>
+      </view>
+
+      <view wx:if="{{question.type=='1'}}">
+        <text class="type1">判断</text> {{question.topic}}
+        <view class="answer" wx:for="{{list}}" wx:for-index="index" wx:for-item="item" wx:key="id">
+          <view class="oneThree" bindtouchstart="bindtouchstart1" style="background-color:{{option1}}" wx:if="{{index==0}}">A、{{item.name}}</view>
+          <view class="oneThree" bindtouchstart="bindtouchstart2" style="background-color:{{option2}}" wx:if="{{index==1}}">B、{{item.name}}</view>
+        </view>
+        <button bindtap="tijiao">提交</button>
+        <text class="tishi">温馨提示:在本题提交后才可看到后面试题，请认真检查前面试题是否完成再提交，提交后不可再做修改!</text>
+      </view>
+
+      <view wx:if="{{question.type=='4'}}">
+        <text class="type1">填空</text> {{question.topic}}
+        <view class="answer1">
+          <text style="margin-left: 20rpx;">1</text>
+          <textarea bindinput="bindinput" class="answer-input" placeholder="请输入答案／请输入三个字"></textarea>
+        </view>
+      </view>
+
+      <view wx:if="{{question.type=='5'}}">
+        <text class="type1">简答</text> {{question.topic}}
+        <view class="answer1">
+          <text style="margin-left: 20rpx;">1</text>
+          <textarea bindinput="bindinput" class="answer-input" placeholder="请输入答案／请输入三个字"></textarea>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

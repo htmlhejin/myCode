@@ -1,0 +1,150 @@
+.top .bgimg {
+  width: 750rpx;
+  height: 436rpx;
+  z-index: -1;
+  position: relative;
+}
+
+.top .question-info {
+  position: absolute;
+  top: 55rpx;
+  left: 261rpx;
+}
+
+.question-info .score {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 55rpx;
+}
+
+.score .title-top1 {
+  color: white;
+  font-size: 99rpx;
+}
+
+.score .title-top2 {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 46rpx;
+}
+
+.question-info .num-time {
+  display: flex;
+  position: absolute;
+  top: 70rpx;
+  right: 130rpx;
+}
+
+.num-time .answered {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 90rpx;
+  width: 158rpx;
+  height: 27rpx;
+}
+
+.answered .title-top3 {
+  color: white;
+  font-size: 34rpx;
+  margin: 10rpx auto;
+}
+
+.answered .answered-num {
+  font-size: 28rpx;
+  color: white;
+}
+
+.use-time{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  position: absolute;
+  top: 170rpx;
+  left: 220rpx;
+}
+.use-time .use-time-num{
+  font-size: 40rpx;
+}
+.use-time .use-time-name{
+  font-size: 28rpx;
+}
+.enjoy {
+  position: absolute;
+  display: flex;
+  top: 8rpx;
+  left: 360rpx;
+  background: rgb(250, 198, 102);
+  border-radius: 20rpx 0rpx 0rpx 20rpx;
+  padding-left: 10rpx;
+}
+
+.enjoy  .share-img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10rpx;
+}
+
+.enjoy  .share {
+  font-size: 28rpx;
+  width: 76rpx;
+  height: 43rpx;
+  color: white;
+}
+
+.bottom .bottom-box {
+  width: 690rpx;
+  height: 400rpx;
+  margin: 30rpx auto;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0rpx 18rpx 36rpx 0rpx rgba(223, 223, 223, 0.32);
+  border-radius: 40px;
+}
+.bottom-box .question {
+  margin: 30rpx 30rpx 60rpx 30rpx;
+}
+
+.question .question-total {
+  font-size: 28rpx;
+  width: 120rpx;
+  height: 60rpx;
+  background-color: #92b2ef;
+}
+
+.answer {
+  margin: 30rpx 30rpx 60rpx 30rpx;
+}
+.answer .line1 {
+  display: flex;
+  justify-content: space-between;
+}
+.title {
+  font-size: 32rpx;
+}
+
+.total-time{
+  color:gold;
+}
+.line2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40rpx;
+}
+.line2 .difficulty {
+  color: gold;  
+}
+
+.btn {
+  background-color: #f49c03;
+  border-radius: 60rpx;
+  margin: 60rpx auto;
+  width: 600rpx;
+  color: white;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+
+

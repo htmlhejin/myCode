@@ -1,0 +1,39 @@
+.body .body-item {
+  display: flex;
+  border-radius: 10rpx;
+  background-color: #fff;
+  border: 0.5rpx solid #e4e0e0;
+  margin: 12rpx;
+  padding: 12rpx;
+}
+
+.body-item  .paper {
+  margin-left: 6rpx;
+}
+
+.paper .question-mode .question {
+  width: 60rpx;
+  height: 60rpx;
+  background-color: pink;
+}
+
+.paper .question-mode .title {
+  width: 100rpx;
+}
+
+.paper .information {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20rpx;
+}
+
+.information .total-num {
+  color: #ccc;
+  font-size: 32rpx;
+}
+
+.information .difficulity {
+  color: #ccc;
+  font-size: 32rpx;
+  margin-right: 10rpx;
+}

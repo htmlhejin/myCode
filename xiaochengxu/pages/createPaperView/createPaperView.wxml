@@ -1,0 +1,37 @@
+<view>
+  <image class="bgimg" src="../../assets/image/bgimg.png"></image>
+  <view class="top-answer">
+    <view class="question">
+      <view class="left-single">
+        <text class="left-title" wx:if = "{{paper.type=='1'}}">总</text>
+        <text class="left-title" wx:elif = "{{paper.type=='2'}}">单</text>
+        <text class="left-title" wx:else>问</text>
+      </view>
+      {{paper.name}}
+    </view>
+    <view class="answer">
+      <view class="line1">
+        <view class="title">答题总分数
+          <text class="answer-title">{{paper.grossScore}}</text>
+          <text class="title">分</text>
+        </view>
+        <view class="title">总题数
+          <text class="answer-title">{{paper.total}}</text>
+          <text class="title">题</text>
+        </view>
+      </view>
+      <view class="line1">
+        <view class="title">答题总时长
+          <text class="answer-title">{{paper.time}}</text>
+          <text class="title">分</text>
+        </view>
+        <view class="title">难度
+          <text class="answer-title">{{paper.difficulty}}</text>
+          <text class="title">分</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <button bindtap="viewPaper" data-id="{{paper.id}}" class="btn">预览试题</button>
+  <view class="warning">仅供预览，不能答题</view>
+</view>

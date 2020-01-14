@@ -1,0 +1,205 @@
+
+.top .bgimg {
+  width: 750rpx;
+  height: 265rpx;
+  z-index: -1;
+  position: relative;
+}
+
+.top .userinfo {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.userinfo .avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin-right: 30rpx;
+  border-radius: 100%;
+  position: absolute;
+  top: 42rpx;
+  left: 28rpx;
+}
+
+.userinfo .username {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  line-height: 56rpx;
+  top: 53rpx;
+  left: 177rpx;
+}
+
+.username .paperOne {
+  font-size: 34rpx;
+  color: white;
+}
+
+.username .putong {
+  color: white;
+  font-size: 28rpx;
+}
+
+.icon {
+  width: 20rpx;
+  height: 30rpx;
+  position: absolute;
+  right: 30rpx;
+  top: 92rpx;
+}
+
+.vip {
+  width: 690rpx;
+  height: 116rpx; 
+  background: linear-gradient(90deg, rgba(244, 229, 209, 1), rgba(239, 213, 173, 1), rgba(239, 189, 110, 1));
+  box-shadow: 4rpx 6rpx 12rpx 0rpx rgba(64, 158, 255, 0.09);
+  margin-left: 30rpx;
+  position: absolute;
+  top: 207rpx;
+  display: flex;
+  align-items: center; 
+  border-radius: 10rpx;
+}
+
+.vip .huiyuan {
+  width: 46rpx;
+  height: 40rpx; 
+  margin-left: 30rpx;
+}
+
+ .zhaunshu-vip {
+  font-size: 30rpx; 
+  margin-left: 20rpx;
+  font-weight:500;
+}
+.vip .vip-rights{
+  width: 161rpx;
+  height: 52rpx;
+  background-color: #323232;
+  color: #efd6af;
+  border-radius:25rpx ;
+  line-height: 52rpx;
+  text-align: center;
+  font-size: 26rpx; 
+  margin: 0rpx 30rpx 0 237rpx; 
+}
+.list {
+  margin-left: 30rpx;
+  width: 690rpx; 
+  box-shadow:3px 2px 15px 0px rgba(132,132,132,0.13);
+  border-radius: 15rpx;
+  margin-top: 10rpx; 
+  margin-bottom: 20rpx; 
+}
+  .list-item-create {
+    width: 690rpx;
+  display: flex; 
+  position: relative;
+  height: 119rpx;
+  line-height:119rpx;
+  margin: 60rpx auto 0; 
+  background-color: #fff;
+}
+  .list-item-create .list-item-create-left{
+  width: 348rpx;
+  height: 119rpx;
+  line-height: 119rpx;
+  display: flex;
+  justify-content: flex-start;
+} 
+  .list-item-create .list-item-create-right{
+  width: 348rpx;
+  height: 119rpx;
+  line-height: 119rpx;
+  display: flex;
+  justify-content: flex-start;
+} 
+  .list-item-create .list-img1 {
+  width: 62rpx;
+  height: 55rpx; 
+  margin:36rpx  10rpx 0 36rpx ;
+}
+
+ .list-item-create .create {
+  font-size: 30rpx;
+  margin-top: 10rpx;
+   line-height: 119rpx; 
+
+}
+
+  .list-item-create .list-img2 {
+  width: 62rpx;
+  height: 54rpx;
+  /* margin: 20rpx 10rpx 20rpx 190rpx; */
+  margin: 33rpx 10rpx 0 57rpx;
+}
+
+.list .list-item{
+   display: flex;
+  border-bottom: 2rpx solid #f5f5f5;
+  position: relative;
+  height: 111rpx;
+  line-height: 111rpx; 
+}
+.list .list-item1{
+  border-bottom:none;
+}
+.list .list-item .icon1{
+  width: 41rpx;
+  height: 34rpx;
+  margin: 40rpx 23rpx 0 34rpx ;
+
+}
+.list .list-item .icon2{
+  width: 41rpx;
+  height: 41rpx;
+  margin: 37rpx 23rpx 0 34rpx ;
+
+}
+.list-item .title {
+  color: #494747;
+  font-size: 34rpx;
+}
+
+.list-item .sub-title {
+  color: #665f5f;
+  font-size: 28rpx;
+  margin-left: 20rpx;
+}
+.list-item .sub-title1 {
+  color: #665f5f;
+  font-size: 28rpx;
+  margin-left: 8rpx;
+}
+.list-item .color-red {
+  color: red;
+  margin-left: 15rpx;
+}
+.list-item .img-icon {
+  width: 21rpx;
+  height: 30rpx;
+  position: absolute;
+  right: 29rpx;
+  top: 44rpx;
+}
+
+.vipbtn {
+  background-color: #323232;
+  border-radius: 25rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 26rpx;
+  margin-top: 50rpx;
+  margin-bottom: 30rpx;
+  margin-right: 20rpx;
+  color: #efd6af;
+}
+
+
+
+
+
+
+
+
+

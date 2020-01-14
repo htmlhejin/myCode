@@ -1,0 +1,50 @@
+<view>
+  <view class="top">
+    <image class="bgimg" src="../../assets/image/bgimg.png"></image>
+    <view class="question-info">
+      <view class="score">
+        <text class="title-top1">{{score}}</text>
+        <view class="title-top2">分</view>
+      </view>
+      <view class="num-time">
+        <view class="answered">
+          <text class="title-top3">{{questionNum}}</text>
+          <text class="answered-num">已答题题数</text>
+        </view>
+      </view>
+      <view class="use-time">
+        <text class="use-time-num">23:25</text>
+        <text class="use-time-name">用时</text>
+      </view>
+      <view class="enjoy">
+        <image class="share-img" src="../../assets/image/share.png"></image>
+        <text class="share" bindtap="share">分享</text>
+      </view>
+    </view>
+  </view>
+  <view class="bottom">
+    <view class="bottom-box">
+      <view class="question">
+        <text class="question-total">总</text> {{title}}
+      </view>
+      <view class="answer">
+        <view class="line1">
+          <view class="title">答题总时长
+            <text class="total-time">{{totalTime}}</text>
+            <text class="title">分钟</text>
+          </view>
+          <view class="title">总题数
+            <text class="total-time">{{totalQuestion}}</text>
+            <text class="title">题</text>
+          </view>
+        </view>
+        <view class="line2">
+          <view class="title">难度
+            <text class="difficulty">{{difficulty}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <button bindtap="return" class="btn">返回首页</button>
+  </view>
+</view>

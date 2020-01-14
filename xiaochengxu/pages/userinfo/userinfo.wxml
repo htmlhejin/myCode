@@ -1,0 +1,41 @@
+<view class="userinfo">
+	<view class="userinfo-list">
+		<view class="userinfo-list-left">
+			头像
+		</view>
+		<view class="userinfo-list-right">
+			<image class="avatar" src="{{userinfo.avatarUrl}}"></image>
+			<image class="img-icon1" src="../../assets/image/icons/arrows.png"></image>
+		</view>
+	</view>
+	<view class="userinfo-list">
+		<view class="userinfo-list-left">
+			昵称
+		</view>
+		<view class="userinfo-list-right">
+			<view class="userinfo-list-right-text">{{userinfo.nickName}}</view>
+			<image class="img-icon1" src="../../assets/image/icons/arrows.png"></image>
+		</view>
+	</view>
+	<view class="userinfo-list">
+		<view class="userinfo-list-left">
+			手机号
+		</view>
+		<view class="userinfo-list-right">
+			<view class="userinfo-list-right-text">{{userinfo.mobmobileile}}</view>
+			<image class="img-icon1" src="../../assets/image/icons/arrows.png"></image>
+		</view>
+	</view>
+	<view class="userinfo-list">
+		<view class="userinfo-list-left">
+			用户类型
+		</view>
+		<view class="userinfo-list-right">
+			<view class="userinfo-list-right-text" wx:if="{{userinfo.roleIds=='1'}}">超级管理会员</view>
+			<view class="userinfo-list-right-text" wx:if="{{userinfo.roleIds=='2'}}">会员用户</view>
+			<view class="userinfo-list-right-text" wx:if="{{userinfo.roleIds=='3'}}">普通用户</view>
+			<image class="img-icon1" src="../../assets/image/icons/arrows.png"></image>
+		</view>
+	</view>
+</view>
+ 

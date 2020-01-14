@@ -1,0 +1,12 @@
+<view>
+  <view>
+    <image class="img" src="../../assets/image/submitPaper.png"></image>
+    <view class="submit">
+      <text class="success">提交成功</text>
+      <text class="waiting">正在判卷中，完成后会有微信提醒</text>
+    </view>
+    <view>
+    <button bindtap="return" class="btn">返回首页</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,9 @@
+<block name="toast">
+  <view class='toast-out' wx:if='{{isShow}}'>
+    <view class='toast-in'>
+      <view class='toast-txt'>
+        {{txt}}
+      </view>
+    </view>
+  </view>
+</block>

@@ -1,0 +1,14 @@
+<view class="body">
+  <view class="body-item" wx:for="{{content}}" wx:key="id">
+    <view class="paper">
+      <view class="question-mode">
+        <text class="question">问</text>
+        <text class="title" bindtap="start" data-id="{{item.id}}">{{item.name}}</text>
+      </view>
+      <view class="information">
+        <text class="total-num">共{{item.number}}题</text>
+        <text class="difficulity">难度{{item.difficulty}}</text>
+      </view>
+    </view>
+  </view>
+</view>

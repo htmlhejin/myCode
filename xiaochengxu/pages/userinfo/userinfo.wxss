@@ -1,0 +1,39 @@
+page{
+  background-color: #f7f7f7;
+}
+.userinfo{
+  width: 750rpx;
+  height: 1300rpx;
+  background-color: #f6f6f6;
+}
+.userinfo-list{
+  width: 750rpx;
+  height: 113rpx;
+  background-color: #fff;
+  border-top: 1rpx solid #f3f3f3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.userinfo-list-left{
+  margin-left: 27rpx;
+}
+.userinfo-list-right{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.avatar{
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+}
+.img-icon1{
+  width: 15rpx;
+  height: 24rpx;
+  margin:  0 30rpx 0 20rpx;
+}
+.userinfo-list-right-text{
+  color: #999;
+}
+ 

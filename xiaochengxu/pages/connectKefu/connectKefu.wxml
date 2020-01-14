@@ -1,0 +1,26 @@
+<view class="service-box">
+	<view class="service-box-top">
+		<view class="service-box-top-text">
+			联系方式：您可以复制QQ号或者微信号联系客服
+		</view>
+	</view>
+	<view class="service-box-content">
+    <view class="service-box-content-list">
+      <view class="service-box-content-list-qq">
+        QQ号:1552279266
+      </view>
+      <view bindtap="copy" data-index="1" style="background-color:{{bgcQQ}};color:{{fontColorQQ}}" class="service-box-content-list-copy">
+        复制
+      </view>
+    </view>
+     <view class="service-box-content-list">
+     <view class="service-box-content-list-qq">
+        微信号:1552279266
+      </view>
+      <view bindtap="copy" data-index="2" style="background-color:{{bgcWX}};color:{{fontColorWX}}" class="service-box-content-list-nocopy">
+        复制
+      </view>
+     </view>
+	</view>
+</view>
+ 

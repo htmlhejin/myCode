@@ -1,0 +1,100 @@
+
+.message-box{ 
+  width: 750rpx;
+  height: 1300rpx;
+  background-color: #f6f6f6;
+}
+
+.message-list{
+  display: flex;
+  width: 750rpx;
+  height: 146rpx; 
+  background-color: #fff;
+  border-top: 1rpx solid #f6f6f6;
+}
+
+.message-list .message-list-hint{
+  width: 92rpx;
+  height: 146rpx; 
+  margin-left: 30rpx;
+  display: flex;
+}
+.message-list-hint-pan{
+  width: 90rpx;
+  height: 90rpx;
+  background-color: #f49c03;
+  border-radius: 50%;
+  margin:auto;
+  text-align: center;
+  line-height: 90rpx;
+  color: #fff;
+  font-size: 32rpx;
+}
+.message-list-hint-kan{
+  width: 90rpx;
+  height: 90rpx;
+  background-color: #92B2EF;
+  border-radius: 50%;
+  margin:auto;
+  text-align: center;
+  line-height: 90rpx;
+  color: #fff;
+  font-size: 32rpx;
+}
+
+
+
+.message-list .message-list-text{
+  width: 584rpx;
+  height: 146rpx;
+  margin-left: 20rpx; 
+}
+.message-list-text .message-list-text-top{
+  width: 584rpx;
+  line-height: 74rpx;
+  height: 74rpx; 
+  display: flex;
+  justify-content: space-between;
+}
+.message-list-text-top-l{ 
+  font-size:34rpx ;
+  font-weight:500;
+  width: 398rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.message-list-text-top-r{
+  color: #999999;
+  font-size:28rpx ;
+}
+.message-list-text .message-list-text-bottom{
+  width: 584rpx;
+  line-height: 65rpx;
+  height: 65rpx; 
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+.message-list-text-botto-l{
+  color: #999999;
+  font-size:28rpx ;
+  width: 513rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.message-list-text-botto-r{
+  width: 28rpx;
+  height: 28rpx;
+  line-height: 28rpx;
+  text-align: center; 
+  color: #fff;
+  font-size: 24rpx;
+  border-radius: 50%;
+  background-color: red;
+  
+}
+
+
+ 

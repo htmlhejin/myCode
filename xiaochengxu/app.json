@@ -1,0 +1,67 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/totalTimeStart/totalTimeStart",
+    "pages/adviceBack/adviceBack",
+    "pages/donePaper/donePaper",
+    "pages/createPaperView/createPaperView",
+    "pages/publishedPaper/publishedPaper",
+    "pages/iCreatePaper/iCreatePaper",
+    "pages/mine/mine",
+    "pages/submitPaper/submitPaper",
+    "pages/submitPaperNoScore/submitPaperNoScore",
+    "pages/submitPaperWait/submitPaperWait",
+    "pages/submitPaperFinish/submitPaperFinish",
+    "pages/search/search",
+    "pages/message/message",
+    "pages/userinfo/userinfo",
+    "pages/datika/datika",
+    "pages/paperModel/paperModel",
+    "pages/paperModelStart/paperModelStart",
+    "pages/totalTimeScore/totalTimeScore",
+    "pages/publishedDetailed/publishedDetailed",
+    "pages/answerCard/answerCard",
+    "pages/totalTimeMode/totalTimeMode",
+    "pages/single/single",
+    "pages/about/about",
+    "pages/question/question",
+    "pages/connectKefu/connectKefu",
+    "pages/components/answerCard/answerCard",
+    "pages/donePaperView/donePaperView"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black" 
+    
+  }, 
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#333333",
+
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "题库",
+        "iconPath": "assets/image/icons/mainPage1.png",
+        "selectedIconPath": "assets/image/icons/mainPage.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "assets/image/icons/mine1.png",
+        "selectedIconPath": "assets/image/icons/mine.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  }
+}

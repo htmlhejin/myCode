@@ -1,0 +1,7 @@
+<view>
+  <view class="top">
+    <text>答题卡</text>
+    <text>倒计时：00:20</text>
+    <text>交卷</text>
+  </view>
+</view>

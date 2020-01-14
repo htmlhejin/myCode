@@ -1,0 +1,74 @@
+.top {
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx;
+  border-bottom: 2rpx solid #ccc;
+}
+
+.top .tishi {
+  display: flex;
+}
+
+.tishi .answer-card {
+  background-color: #92b2ef;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.tishi .answer-text {
+  color: #92b2ef;
+  font-size: 32rpx;
+}
+
+.tishi .daoajishi {
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 6rpx;
+}
+
+
+.tishi .daojishi-text {
+  color: #666;
+  font-size: 32rpx;
+}
+
+.jiaojuan {
+  display: flex;
+}
+
+.jiaojuan .tijiao {
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 6rpx;
+}
+
+.jiaojuan .jiaojuan-text {
+  color: #f49c03;
+  font-size: 32rpx;
+}
+
+.btns {
+  display: inline-block;
+  margin-left: 4rpx;
+  margin-top: 30rpx;
+  margin-bottom: 20rpx;
+}
+
+
+
+.btns .question {
+  display: flex;
+  flex-direction: row;
+  width: 130rpx;
+  padding-left: 12rpx;
+}
+
+.question .btn {
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 100%;
+  line-height: 90rpx;
+  padding-left: 33rpx;
+  padding-top: 5rpx;
+  border: 2rpx solid #999;
+}

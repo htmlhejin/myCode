@@ -1,0 +1,81 @@
+.top {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 2rpx solid #ccc;
+}
+
+.top .top-nav {
+  display: flex;
+}
+
+.top-nav .answer-card {
+  background-color: #92b2ef;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.top-nav .answer-card-text {
+  color: #92b2ef;
+  font-size: 32rpx;
+}
+
+.top-nav .daoajishi {
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 6rpx;
+}
+
+.top-nav .daoajishi-text {
+  color: #666;
+  font-size: 32rpx;
+}
+
+.top-nav .tijiao {
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 6rpx;
+}
+
+.top-nav .jiaojuan {
+  color: #f49c03;
+  font-size: 32rpx;
+}
+
+
+.body .question .question-name {
+  color: gold;
+  font-size: 32rpx;
+}
+
+
+.body .answer {
+  margin-top: 20rpx;
+}
+
+.answer .oneThree {
+  background-color: #ece8e8;
+  padding-left: 30rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin-bottom: 10rpx;
+}
+
+.answer .twoFour {
+  padding-left: 30rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin-bottom: 10rpx;
+}
+
+.body .btn {
+  background-color: #f49c03;
+  border-radius: 100%;
+  width: 100rpx;
+  height: 100rpx;
+  color: white;
+  font-size: 20rpx;
+  line-height: 100rpx;
+  position: absolute;
+  right: 20rpx;
+}

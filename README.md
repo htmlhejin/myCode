@@ -1,1 +1,1 @@
-# myCode
+# componeny

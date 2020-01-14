@@ -1,0 +1,84 @@
+<view>
+  <view class="top">
+    <view class="top-nav" bindtap="answerCard">
+      <image class="answer-card" src="../../assets/image/answerCard.jpg"></image>
+      <text class="answer-card-text">答题卡</text>
+    </view>
+    <view class="top-nav">
+      <image class="daoajishi" src="../../assets/image/daojishi.png"></image>
+      <text class="daoajishi-text">倒计时:{{timer}}</text>
+    </view>
+    <view class="submit">
+      <image class="tijiao" src="../../assets/image/tijiao.png"></image>
+      <text class="jiaojuan" wx:if="{{onlyView==0}}" bindtap="submit">交卷</text>
+      <text class="create-jiaojuan" wx:elif="{{onlyView==1}}">交卷</text>
+    </view>
+  </view>
+  <view class="backdrop" wx:if="{{showModal}}" bindtap="cancelModal">
+    <view class="allquestion">
+      <view class="btns" wx:for="{{questions}}" wx:key="id">
+        <view class="questionNum">
+          <button class="classify {{item.question.isDone==0 ?'un-answer':'answered' }}">{{index+1}}</button>
+        </view>
+      </view>
+      <view class="bottom-instruction">
+        <view class="someQuestion">{{page+1}}\{{questionNum}}</view>
+        <view class="instruction">
+          <view>1、题号不可随意跳转，可返回修改答案</view>
+          <view>2、紫色边框是未作答试题，紫色是可答试题中的已作答试题</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="body">
+    <view class="question">
+      <view>
+        <view class="question-type">
+          <view wx:for="{{questionTypes}}" wx:for-index="index" wx:key="index">
+           <view class="title-box" wx:if="{{question.question.type==index+1}}">
+              <view class="tixing">{{questionTypes[index].type}}
+               <view class="tixing-img">
+                <image src="../../assets/image/icons/tixing1.png"></image>
+              </view></view> 
+              <text class="question-title">{{question.question.topic}}</text>
+            </view>
+          </view>
+        </view>
+        <view class="answer" wx:if="{{onlyView==0}}" wx:for="{{question.list}}" wx:for-index="index" data-index="{{index}}" wx:for-item="item" wx:key="id">
+          <view bindtouchstart="tapOption" data-paper="{{paper}}" data-item="{{item}}" data-index="{{index}}" class="classify {{item.checked ? 'select-color' : 'oneThree' }}" wx:if="{{question.question.type==1 || question.question.type==2 || question.question.type==3}}">
+            {{charList[index].options}}<text class="w-30"></text>{{item.name}}
+          </view>
+          <view class="input-area" wx:if="{{question.question.type==4 || question.question.type==5}}">
+            <view class="every-question">
+              <text class="question-sort">{{index+1}}</text>
+              <text>{{item.nodular}}</text>
+            </view>
+            <textarea bindinput="inputAnswer" data-item="{{item}}" class="textarea" value="{{item.content}}"></textarea>
+          </view>
+        </view>
+        <view class="answer" wx:for="{{question.list}}" wx:if="{{onlyView==1}}" wx:for-index="index" data-index="{{index}}" wx:for-item="item" wx:key="id">
+          <view wx:if="{{onlyView==1}}" data-paper="{{paper}}" data-item="{{item}}" data-index="{{index}}" class="classify {{item.checked ? 'select-color' : 'oneThree' }}" wx:if="{{question.question.type==1 || question.question.type==2 || question.question.type==3}}">
+            {{charList[index].options}} {{item.name}}
+          </view>
+          <view wx:if="{{onlyView==1}}" class="input-area" wx:if="{{question.question.type==4 || question.question.type==5}}">
+            <view class="every-question">
+              <text class="question-sort">{{index+1}}</text>
+              <text wx:if="{{question.question.type==5}}">{{item.nodular}}</text>
+            </view>
+            <textarea class="textarea" placeholder="{{item.name}}" value="{{item.content}}"></textarea>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="classify {{ question.question.type=='1' ||question.question.type=='2' || question.question.type=='3' ? 'return-next' : 'return-nextjd' }} ">
+    <view class="classify {{ page!=0  ? 'return-img' : 'return-img1' }}">
+      <image class="return-before" src="../../assets/image/return.png" bindtap="prevQuestion"></image>
+    </view>
+    <button wx:if="{{page==questions.length-1 && onlyView==0}}" bindtap="submit" class="next">交卷</button>
+    <button bindtap="nextQuestion" wx:elif="{{page!=questions.length-1 && onlyView==0}}" class="next">下一题</button>
+    <button bindtap="nextQuestion" wx:if="{{ onlyView==1}}" class="classify {{ page!=questions.length-1 ? 'next' : 'next1' }}">下一题</button>
+  </view>
+  <button open-type="share" data-id="{{paper.id}}" class="zhuanfa" wx:if="{{ onlyView==1}}">转发
+  </button>
+</view>

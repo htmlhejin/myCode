@@ -1,0 +1,33 @@
+.login {
+  width: 750rpx;
+  height: 1334rpx;
+  background: linear-gradient(-30deg, rgba(255, 244, 224, 1), rgba(255, 255, 255, 1));
+}
+
+.img {
+  width: 532rpx;
+  height: 598rpx;
+  margin-left: 100rpx;
+}
+
+.instruction {
+  width: 438rpx;
+  height: 79prx;
+  font-size: 30rpx;
+  color: rgba(82, 81, 82, 1);
+  line-height: 51rpx;
+  margin: 100rpx auto 43rpx;
+  text-align: center
+}
+
+.btn {
+  width: 690rpx!important;
+  height: 88rpx!important;
+  line-height: 88rpx!important; 
+  font-weight:500;
+  color:rgba(255,255,255,1);
+  font-size:32rpx;
+  background: rgba(244, 156, 3, 1)!important;
+  border-radius: 40rpx!important; 
+  padding: 0;
+}

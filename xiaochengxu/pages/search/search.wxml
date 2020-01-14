@@ -1,0 +1,10 @@
+<view>
+  <view class="top">
+    <input class="search" bindinput="bindinput" maxlength="10" placeholder="前端测试题"></input>
+    <view class="cancel" bindtap="cancel">取消</view>
+    <image class="search-icon" src="../../assets/image/searchPaper.png"></image>
+  </view>
+  <view class="name" bindtap="bindtap" data-id="{{item.id}}" wx:for="{{searchList}}" wx:key="id">
+    <text class="name-content">{{item.name}}</text>
+  </view>
+</view>

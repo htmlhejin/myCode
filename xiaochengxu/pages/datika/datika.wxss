@@ -1,0 +1,6 @@
+.top{
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx;
+  border-bottom: 2rpx solid #cccccc;
+}

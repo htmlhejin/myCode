@@ -1,0 +1,99 @@
+<view>
+  <view class="top">
+    <swiper class="swiper" indicator-dots="true" autoplay="false" interval="5000" duration="1000">
+      <block wx:for="{{background}}" wx:key="id">
+        <swiper-item>
+          <image class="bgimg" src="{{item.url}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="top-input">
+      <input bindtap="serach" class="search-input"></input>
+      <image class="search-img" src="../../assets/image/search.png"></image>
+    </view>
+  </view>
+  <view class="paper">
+    <view class="recommend-img1">
+      <image class="left" src="../../assets/image/recommendStore.png"></image>
+      <text class="recommend">推荐题库</text>
+    </view>
+    <view class="question-body">
+      <view bindtap="questionMode" class="mode">
+        <image class="recimg" src="../../assets/image/ask.png"></image>
+        <view class="mode1">
+          <text style="z-index='-1'">问卷模式</text>
+        </view>
+      </view>
+      <view bindtap="totalTimeMode" class="mode">
+        <image class="recimg" src="../../assets/image/sum.png"></image>
+        <text class="mode2">总计时模式</text>
+      </view>
+      <view bindtap="singleTimeMode" class="mode">
+        <image class="recimg" src="../../assets/image/single.png"></image>
+        <text class="mode3">单独计时模式</text>
+      </view>
+    </view>
+  </view>
+  <view class="question">
+    <view class="recommend-top">
+      <view class="recommend-img">
+        <image class="left" src="../../assets/image/recommendStore.png"></image>
+        <text class="recommend">推荐试题</text>
+      </view>
+      <image class="yingyong" bindtap="change" wx:if="{{list}}" src="../../assets/image/yingyong.png"></image>
+      <image class="yingyong" bindtap="change" wx:if="{{yingyong}}" src="../../assets/image/list.png"></image>
+    </view>
+    <view class="body-item" bindtap="everyQuestion" data-id="{{item.id}}" wx:if="{{list}}" wx:for="{{paper}}" wx:key="id">
+      <text class="single-left-sum" wx:if="{{item.type=='1'}}">总</text>
+      <text class="single-left-single" wx:if="{{item.type=='2'}}">单</text>
+      <text class="single-left-question" wx:if="{{item.type=='3'}}">问</text>
+      <view class="paper-item">
+        <view class="name-num">
+          <text class="paper-name">#{{item.name}}</text>
+          <view class="question-num">
+            <text class="question-num-text">共{{item.total}}题</text>
+            <text class="question-difficulty">难度{{item.difficulty}}.0</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="pubuliu">
+      <view class="ceng1">
+        <view class="ceng-left" wx:if="{{yingyong}}" bindtap="everyQuestion" data-id="{{item.id}}" wx:for="{{leftPaper}}" wx:key="id">
+          <view>
+            <image class="tuceng1" src="../../assets/image/tuceng.png"></image>
+            <text class="paper-mode" wx:if="{{item.type=='1'}}">总计时</text>
+            <text class="paper-mode" wx:if="{{item.type=='2'}}">单独计时</text>
+            <text class="paper-mode" wx:if="{{item.type=='3'}}">问卷</text>
+          </view>
+          <text class="paper-name1">{{item.name}}</text>
+          <view class="yingyong-num1">
+            <text class="yingyong-num-text1">共{{item.number}}题</text>
+            <text class="yingyong-difficulty1">难度{{item.difficulty}}.0</text>
+          </view>
+          <image class="circlerect1" wx:if="{{item.type=='2'}}" src="../../assets/image/cirrlerect.png"></image>
+          <image class="circlerect1" wx:if="{{item.type=='1'}}" src="../../assets/image/circleBlue.png"></image>
+          <image class="circlerect1" wx:if="{{item.type=='3'}}" src="../../assets/image/circleRed.png"></image>
+        </view>
+      </view>
+      <view class="ceng2">
+        <view class="ceng-right" wx:if="{{yingyong}}" bindtap="everyQuestion" data-id="{{item.id}}" wx:for="{{rightPaper}}" wx:key="id">
+          <view class="ceng-right-mode">
+            <image class="tuceng2" src="../../assets/image/tuceng.png"></image>
+            <text class="paper-right-mode" wx:if="{{item.type=='1'}}">总计时</text>
+            <text class="paper-right-mode" wx:if="{{item.type=='2'}}">单独计时</text>
+            <text class="paper-right-mode" wx:if="{{item.type=='3'}}">问卷</text>
+          </view>
+          <text class="paper-name2">{{item.name}}</text>
+          <view class="question-num2">
+            <text class="question-num-text2">共{{item.total}}题</text>
+            <text class="question-difficulty2">难度{{item.difficulty}}.0</text>
+          </view>
+          <image class="circlerect2" wx:if="{{item.type=='2'}}" src="../../assets/image/cirrlerect.png"></image>
+          <image class="circlerect2" wx:if="{{item.type=='1'}}" src="../../assets/image/circleBlue.png"></image>
+          <image class="circlerect2" wx:if="{{item.type=='3'}}" src="../../assets/image/circleRed.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

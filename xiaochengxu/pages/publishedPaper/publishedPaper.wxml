@@ -1,0 +1,31 @@
+<view>
+  <view class="top-warn">
+    <text>仅供预览，不能答题</text>
+  </view>
+  <view class="question">
+    <text class="total">总</text> #描述一下浏览器是怎样访问网页的？
+  </view>
+  <view class="answer">
+    <view class="line1">
+      <view class="title">答题总分数
+        <text class="number">100</text>
+        <text class="title">分</text>
+      </view>
+      <view class="title">总题数
+        <text class="number">20</text>
+        <text class="title">题</text>
+      </view>
+    </view>
+    <view class="line2">
+      <view class="title">答题总时长
+        <text class="number">100</text>
+        <text class="title">分</text>
+      </view>
+      <view class="title">难度
+        <text class="number">20</text>
+        <text class="title">分钟</text>
+      </view>
+    </view>
+  </view>
+  <button class="btn">预览试题</button>
+</view>

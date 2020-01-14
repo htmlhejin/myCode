@@ -1,0 +1,31 @@
+<view class="body">
+  <view bindtap="createPaper" wx:if="{{ifCreatePaper==true && ifPermission==true}}" data-item="{{item}}" class="body-item" wx:for="{{content}}" wx:key="id">
+    <text class="left-sum" wx:if="{{item.type=='1'}}">总</text>
+    <text class="left-single" wx:if="{{item.type=='2'}}">单</text>
+    <text class="left-question" wx:if="{{item.type=='3'}}">问</text>
+    <view class="question">
+      <view class="question-info">
+        <text class="title">{{item.name}}</text>
+        <view class="total-num">
+          <text class="total-text">共{{item.total}}题</text>
+          <text class="difficulity">难度{{item.difficulty}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="not-box" wx:if="{{ifPermission==true && ifCreatePaper==false}}">
+    <image src="../../assets/image/noPaper.png"></image>
+    <view class="not-box-text">
+      <view class="not-box-text-t">暂无试卷！</view>
+      <view class="not-box-text-b"> 快去Web端创建一套试卷吧～</view>
+    </view>
+  </view>
+  <view class="not-box" wx:if="{{ifPermission==false}}">
+    <image src="../../assets/image/noPaper.png"></image>
+    <view class="not-box-text">
+      <view class="not-box-text-t">暂无试卷！</view>
+      <view class="not-box-text-b"> 快去Web端申请创建试卷的权限吧～</view>
+    </view>
+  </view>
+</view>

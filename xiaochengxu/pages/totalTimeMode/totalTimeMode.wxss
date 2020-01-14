@@ -1,0 +1,54 @@
+.body .body-item {
+  display: flex; 
+  background-color: #fff; 
+   margin: 20rpx auto 20rpx; 
+  width:690rpx;
+  height:184rpx;
+  box-shadow:0px 2px 30px 3px rgba(243,243,243,1);
+  border-radius:20rpx;
+}
+
+.body-item .left-single {
+  width: 70rpx;
+  height: 114rpx;
+  display: block;
+  line-height: 114rpx;
+  text-align: center;
+  background: #e9f0fc; 
+  border-radius: 7rpx;
+  color: #92B2EF; 
+  margin: 34rpx 20rpx 0;
+}
+
+
+.body-item .information {
+  margin-left: 6rpx;
+}
+.information .question-info .title {
+  overflow: hidden;
+  width: 100rpx;
+  font-size:34rpx;
+  font-weight:500;
+}
+.information .question-info {
+ margin-top:42rpx; 
+}
+
+.information .question-info .total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 19rpx;
+  width: 541rpx;
+}
+
+.total .total-num {
+  color: #999;
+  font-size: 28rpx;
+}
+
+.total .difficulity {
+  color: #999;
+  font-size: 28rpx;
+  margin-right: 10rpx;
+}
+

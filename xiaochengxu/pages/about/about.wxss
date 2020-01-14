@@ -1,0 +1,12 @@
+.text-context{
+  line-height: 55rpx;
+  font-size:30rpx ; 
+  margin:  45rpx 30rpx 0;
+}
+.text-context .text-context-title{
+  margin-bottom: 20rpx;
+  text-indent:60rpx
+}
+.text-context .text-context-center{
+  text-indent:60rpx
+}

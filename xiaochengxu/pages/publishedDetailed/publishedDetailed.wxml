@@ -1,0 +1,28 @@
+<view>
+  <view class="top">
+    <view class="top-nav">
+      <view class="answer-card"></view>
+      <text class="answer-card-text">答题卡</text>
+    </view>
+    <view class="top-nav">
+      <image class="daoajishi" src="../../assets/image/daojishi.png"></image>
+      <text class="daoajishi-text">倒计时：{{time}}</text>
+    </view>
+    <view class="top-nav">
+      <image class="tijiao" src="../../assets/image/tijiao.png"></image>
+      <text class="jiaojuan">交卷</text>
+    </view>
+  </view>
+  <view class="body">
+    <view class="question">
+      <text class="question-name">多选</text> 2、否定教育自身的发展规律，割裂教育的历史传承，把教育完全作为改造政治，经济的附庸。 这样观念违背了教育的哪已特性？
+    </view>
+    <view class="answer">
+      <view class="oneThree">A、生产性</view>
+      <view class="twoFour">B、永恒性</view>
+      <view class="oneThree">C、相对独立性</view>
+      <view class="twoFour">D、工具性</view>
+    </view>
+  </view>
+  <button class="btn">转发</button>
+</view>

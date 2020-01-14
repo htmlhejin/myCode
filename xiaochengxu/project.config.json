@@ -1,0 +1,404 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": false,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.10.0",
+	"appid": "wxf090bb674fc04747",
+	"projectname": "xiaochegnxu",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "lianxi",
+					"pathName": "pages/lianxi/lianxi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "singleTimeModel",
+					"pathName": "pages/singleTimeModel/singleTimeModel",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "single1",
+					"pathName": "pages/single1/single1",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "single2",
+					"pathName": "pages/single2/single2",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "single3",
+					"pathName": "pages/single3/single3",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "single4",
+					"pathName": "pages/single4/single4",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "single5",
+					"pathName": "pages/single5/single5",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "totalTimeStart",
+					"pathName": "pages/totalTimeStart/totalTimeStart",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "totalTimeReturn",
+					"pathName": "pages/totalTimeReturn/totalTimeReturn",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "adviceBack",
+					"pathName": "pages/adviceBack/adviceBack",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "adviceBackEffect",
+					"pathName": "pages/adviceBackEffect/adviceBackEffect",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "donePaper",
+					"pathName": "pages/donePaper/donePaper",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "donePaperView",
+					"pathName": "pages/donePaperView/donePaperView",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "publishedPaper",
+					"pathName": "pages/publishedPaper/publishedPaper",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "iCreatePaper",
+					"pathName": "pages/iCreatePaper/iCreatePaper",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "mine",
+					"pathName": "pages/mine/mine",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "submitPaper",
+					"pathName": "pages/submitPaper/submitPaper",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "submitPaperNoScore",
+					"pathName": "pages/submitPaperNoScore/submitPaperNoScore",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 18,
+					"name": "submitPaperWait",
+					"pathName": "pages/submitPaperWait/submitPaperWait",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/submitPaperWait",
+					"pathName": "pages/submitPaperWait/submitPaperWait",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "publishPaperWait",
+					"pathName": "pages/publishPaperWait/publishPaperWait",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "submitPaperWait",
+					"pathName": "pages/submitPaperWait/submitPaperWait",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "submitPaperFinish",
+					"pathName": "pages/submitPaperFinish/submitPaperFinish",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "search",
+					"pathName": "pages/search/search",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "message",
+					"pathName": "pages/message/message",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "userinfo",
+					"pathName": "pages/userinfo/userinfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "datika",
+					"pathName": "pages/datika/datika",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "instruction",
+					"pathName": "pages/instruction/instruction",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "paperModel",
+					"pathName": "pages/paperModel/paperModel",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "paperModelStart",
+					"pathName": "pages/paperModelStart/paperModelStart",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "storePage",
+					"pathName": "pages/storePage/storePage",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 31,
+					"name": "storePage1",
+					"pathName": "pages/storePage1/storePage1",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "singleTimeModel",
+					"pathName": "pages/singleTimeModel/singleTimeModel",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "totalTImescore",
+					"pathName": "pages/totalTImescore/totalTImescore",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "totalTimeScore",
+					"pathName": "pages/totalTimeScore/totalTimeScore",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "submitPaperWait",
+					"pathName": "pages/submitPaperWait/submitPaperWait",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "publishedDetailed",
+					"pathName": "pages/publishedDetailed/publishedDetailed",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "answerCard",
+					"pathName": "pages/answerCard/answerCard",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "totalTimeMode",
+					"pathName": "pages/totalTimeMode/totalTimeMode",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "single",
+					"pathName": "pages/single/single",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "singleTimeModelStart",
+					"pathName": "pages/singleTimeModelStart/singleTimeModelStart",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "totalTimeScore",
+					"pathName": "pages/totalTimeScore/totalTimeScore",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "singleTimeModelScore",
+					"pathName": "pages/singleTimeModelScore/singleTimeModelScore",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "授权",
+					"pathName": "pages/shouquan/shouquan",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "test",
+					"pathName": "pages/test/test",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "login",
+					"pathName": "pages/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/daojishi",
+					"pathName": "pages/daojishi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/userinfo/userinfo",
+					"pathName": "pages/userinfo/userinfo",
+					"scene": null
+				}
+			]
+		}
+	}
+}

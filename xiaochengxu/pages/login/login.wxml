@@ -1,0 +1,12 @@
+<view class="login">
+  <view>
+    <image class="img" src="../../assets/image/shouquan.png"></image>
+  </view>
+  <view class="instruction">
+    <text>题库小程序申请获取以下权限：</text>
+    <text>获取您的手机号，头像等</text>
+  </view>
+  <view>
+    <button class="btn" open-type='getUserInfo' bindgetuserinfo='getUserInfo'>确认授权</button>
+  </view>
+</view>

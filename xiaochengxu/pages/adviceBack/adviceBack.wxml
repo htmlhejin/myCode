@@ -1,0 +1,31 @@
+  <view class="content-box">
+	<view class="around">
+		<view class="top">
+			<view class="top-title">
+				<view class="top-title-l">问题/意见描述</view>
+				<view class="top-title-r">{{current}}/{{max}}</view>
+			</view>
+			<textarea bindinput="inputAnswer" placeholder=" 请填写10字以上的问题描述，以便我们更好地帮 助您解决问题 " class="input" value="{{content}}"></textarea>
+			<view class="upload-img">
+				<view class="upload" bindtap="uploadImg">+</view>
+				<text class="upload-text">上传问题截图 , 最多 4 张 (选填)</text>
+				<view class="upload-img-center">
+        <block  wx:for="{{images}}" wx:for-item="item" wx:for-index="index" wx:key="id">
+          <image class="image" src="{{item}}"></image>
+        </block>
+				</view>
+			</view>
+		</view>
+
+		<view class="middle">
+			<text class="connect">联系方式(选填)</text>
+			<input class="telephone" bindinput="phone" placeholder="请填写您的邮箱或手机号码，以便我们跟你联系">{{phone}}</input>
+		</view> 
+	</view>
+  <view class="btn-box">
+			<button bindtap="submitAdvice" class="btn">提交</button>
+		</view>
+</view> 
+
+
+ 

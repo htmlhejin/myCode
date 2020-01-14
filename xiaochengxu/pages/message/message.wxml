@@ -1,0 +1,50 @@
+<view class="message-box">
+	<view class="message-list">
+		<view class="message-list-hint">
+			<view class="message-list-hint-pan">
+				判
+			</view>
+		</view>
+		<view class="message-list-text">
+			<view class="message-list-text-top">
+				<view class="message-list-text-top-l">
+					您有一套试卷待判
+				</view>
+				<view class="message-list-text-top-r">
+					16:47
+				</view>
+			</view>
+			<view class="message-list-text-bottom">
+				<view class="message-list-text-botto-l">
+					总计时-描述一下进程和线程的区别
+				</view>
+				<view class="message-list-text-botto-r">1</view>
+			</view>
+		</view>
+	</view>
+
+  <view class="message-list">
+		<view class="message-list-hint">
+			<view class="message-list-hint-kan">
+				看
+			</view>
+		</view>
+		<view class="message-list-text">
+			<view class="message-list-text-top">
+				<view class="message-list-text-top-l">
+					您的成绩已出结果，点击...
+				</view>
+				<view class="message-list-text-top-r">
+					16:47
+				</view>
+			</view>
+			<view class="message-list-text-bottom">
+				<view class="message-list-text-botto-l">
+					总计时-描述一下进程和线程的区别是什...
+				</view>
+				<view class="message-list-text-botto-r">1</view>
+			</view>
+		</view>
+	</view>
+</view>
+ 

@@ -1,0 +1,22 @@
+.img{
+  width: 670rpx;
+  height: 536rpx;
+  margin: 40rpx;
+  border: 2rpx dashed #cccccc;
+}
+
+.submit{
+  display: flex;
+  flex-direction: column;
+  font-size: 28rpx;
+  margin: 20rpx auto;
+}
+.submit .success{
+  color:orange;
+  display: flex;
+  margin: 20rpx auto;
+}
+.submit .wait{
+  display: flex;
+  margin: 20rpx auto;
+}

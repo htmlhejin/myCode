@@ -1,0 +1,21 @@
+<view>
+  <view class="top">
+    <view class="tishi">
+      <view class="answer-card"></view>
+      <text class="answer-text">答题卡</text>
+    </view>
+    <view class="tishi">
+      <image class="daoajishi" src="../../assets/image/daojishi.png"></image>
+      <text class="daojishi-text">倒计时：{{time}}</text>
+    </view>
+    <view class="jiaojuan">
+      <image class="tijiao" src="../../assets/image/tijiao.png"></image>
+      <text class="jiaojuan-text">交卷</text>
+    </view>
+  </view>
+  <view class="btns" wx:for="{{questionNum}}" wx:key="id">
+    <view class="question">
+      <button class="btn">{{item}}</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,11 @@
+<view>
+  <view>
+    <image class="img" src="../../assets/image/submitPaper.png"></image>
+    <view class="submit">
+      <text class="success">提交成功</text>
+    </view>
+    <view>
+    <button bindtap="return" class="btn">返回首页</button>
+    </view>
+  </view>
+</view>

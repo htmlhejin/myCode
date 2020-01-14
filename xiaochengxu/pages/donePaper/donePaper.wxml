@@ -1,0 +1,16 @@
+<view class="body">
+  <view class="body-item" bindtap="paperView" data-item="{{item}}" wx:for="{{paper}}" wx:key="id">
+    <view class="paper-item">
+        <text class="left-sum" wx:if="{{item.type=='1'}}">总</text>
+        <text class="left-single" wx:if="{{item.type=='2'}}">单</text>
+        <text class="left-question" wx:if="{{item.type=='3'}}">问</text>
+      <view class="xishu"> 
+        <text class="question">{{item.name}}</text>
+        <view class="xishu-box">
+          <text class="total-num">共{{item.total}}题</text>
+          <text class="difficulity">难度{{item.difficulty}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

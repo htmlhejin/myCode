@@ -1,0 +1,10 @@
+<view class="backdrop" wx:if="{{showModal}}">
+ <view class="allquestion">
+    <view class="btns" wx:for="{{questionNum}}" wx:key="id">
+    <view class="question">
+      <button class="btn">{{item}}</button>
+    </view>
+  </view>
+ </view>
+</view>
+

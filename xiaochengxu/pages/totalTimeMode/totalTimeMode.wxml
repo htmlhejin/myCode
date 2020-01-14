@@ -1,0 +1,16 @@
+<view class="body">
+  <view class="body-item" bindtap="paperContent" data-id="{{item.id}}" wx:for="{{question}}" wx:key="id">
+    <text class="left-single" wx:if="{{item.type=='1'}}">总</text>
+    <text class="left-single" wx:if="{{item.type=='2'}}">单</text>
+    <text class="left-single" wx:if="{{item.type=='3'}}">问</text>
+    <view class="information">
+      <view class="question-info"> 
+        <text class="title">#{{item.name}}</text>
+        <view class="total">
+          <text class="total-num">共{{item.total}}题</text>
+          <text class="difficulity">难度{{item.difficulty}}.0</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
